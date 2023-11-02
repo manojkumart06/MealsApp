@@ -41,4 +41,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Live Demo
 
-You can try the live demo of the Meal App [here](#).
+You can try the live demo of the Meal App [here](https://manojkumart06.github.io/MealsApp/).
