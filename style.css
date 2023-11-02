@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+/* app's logo */
+#logo {
+    height: 120px;
+    width: 120px;
+    margin: 0; 
+    border-radius: 100%;
+    padding: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.navbar-toggler-icon {
+    color: white;
+}
+
+
+h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+input.Searchbox {
+    margin-left: 70px;
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+header button {
+    background-color: #E44D26;
+    color: #fff;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    padding:0.5em 0.8em;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    box-shadow: 0px 2px 25px rgb(255, 0, 130, 0.5);
+    transition: transform ease-in 0.1s,
+                box-shadow ease-in 0.25s;
+}
+
+/*MAIN section*/
+main {
+    margin: 20px;
+}
+main section {
+    text-align: center;
+}
+
+.meals_holder{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px hsla(103, 89%, 48%, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.meals_holder > div {
+    flex-basis: calc(33.33% - 20px); /* 33.33% width with 20px margin between items */
+    margin-bottom: 20px; /* Margin between rows */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.meals_holder h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: rgb(165, 6, 157);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.meals_holder img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.favorite-meals-list h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #20680a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.favorite-meals-list img {
+    max-width: 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*addToFavourites-details-button*/
+.addToFavourites-details-button{
+    background-color: #ff0081;
+    color: #fff;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    padding:0.5em 0.8em;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    box-shadow: 0px 2px 25px rgb(255, 0, 130, 0.5);
+    transition: transform ease-in 0.1s,
+                box-shadow ease-in 0.25s;
+}
+
+
+/*view-details-button*/
+.view-details-button {
+    margin: 10px;
+    background-color: hwb(189 2% 2%);
+    color: #fff;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    padding:0.5em 0.8em;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    box-shadow: 0px 2px 25px #00a2ff80;
+    transition: transform ease-in 0.1s,
+                box-shadow ease-in 0.25s;
+    
+  }
+  .removeFromFavourites{
+    margin: 10px;
+    background-color: rgb(250, 13, 5);
+    color: #fff;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    padding:0.5em 0.8em;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    box-shadow: 0px 2px 25px #00a2ff80;
+    transition: transform ease-in 0.1s,
+                box-shadow ease-in 0.25s;
+  }
+
+  #wishlist-button{
+    margin-right: 100px;
+    background-color: #3205fa;
+    color: #fff;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    padding:0.5em 0.8em;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    box-shadow: 0px 2px 25px #00a2ff80;
+    transition: transform ease-in 0.1s,
+                box-shadow ease-in 0.25s;
+  }
+  .meal-details-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+.meal-image{
+    border-radius: 5%;
+    width:20%;
+    height: 20%;
+    margin-top: -10%;
+    margin-left: 50%;
+}
+
+.meal-details-card {
+  background: #fff;
+  padding: 100px; /* Reduce the padding */
+  margin: 100px; /* Remove the margin */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(246, 22, 22, 0.2);
+  max-width: 80%;
+  text-align: start;
+  position: relative;
+  overflow-y: auto; /* Add scroll for overflow */
+  max-height: calc(80% - 40px); /* Adjust max-height considering padding */
+}
+
+.meal-details-card h2, .meal-details-card h6 {
+    margin: 5px;
+    color: #07511f;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .youtube-link-button {
+    color: black;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left:43%;
+  }
+  
+  .youtube-link-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+.meal-instructions{
+    padding: 0;
+	width: 100%;
+	text-align: justify;
+	color: grey;
+	line-height: 25px;
+	font-size: 17px;
+	margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    input.Searchbox {
+        width: 100%;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    .meals_holder {
+        margin: 10px;
+    }
+}
+
